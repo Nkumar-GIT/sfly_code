@@ -46,14 +46,14 @@ PRIMARY KEY (order_id)
 );
 
 
--- extra table to keep weeks.
+-- extra table to keep weeks related week_start and week_end dates.
 CREATE TABLE shutterfly.week(
 week_start TIMESTAMP,
 week_end TIMESTAMP,
 week INT
 );
 
-
+-- this is to generate the weekly dates for week table, can be generated various way depends on databases.
 insert into shutterfly.week
 SELECT date_trunc('day', dd):: date as week_start, date_trunc('day', dd):: date +7 as week_end, 
 row_number() over () week_no
