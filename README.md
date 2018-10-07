@@ -23,5 +23,5 @@ e.g. NEW - insert, UPLOAD - insert, UPDATE - update
 ```
 
 ## Future Improvements:
-Add logging to have the better log info so it will be easy while debugging and monitoring.  
-Add Error handeling to handle the incorrect data.
+- Add logging to have the better log info so it will be easy while debugging and monitoring.  
+- Add Error handeling to handle the incorrect data.
