@@ -6,8 +6,8 @@ Database: PostGreSQL
 Python program is to read the file having json data and load into PostGreSQL database, also calulates customer LTV values.
   
 # Libraries used:
-psycopg2 to connect PostGreSQL database
-json to read the json data, this can be done without using json as well with additional coding
+psycopg2 : To connect PostGreSQL database.  
+json : To read the json data, this can be done without using json as well with additional coding.  
 
 # Source code:
 SQL script to create all the required tables in PostGreSQL and create view for customer LTV.
@@ -21,6 +21,5 @@ verb - this is to perform the required actions. e.g NEW - insert, UPLOAD - inser
 ```
 
 # Future Improvements:
-Add logging to have the better log info so it will be easy while debugging and monitoring.
+Add logging to have the better log info so it will be easy while debugging and monitoring.  
 Add Error handeling to handle the incorrect data.
-Add more cleansing logic wherever applicable.
